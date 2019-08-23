@@ -16,8 +16,6 @@ def summon_captain_planet(array)
   nu_array
 end
 
-summon_captain_planet(planeteer_calls)
-
 def long_planteer_calls(long_planteer_calls)# code an argument here
   # Your code here
   answer = false
