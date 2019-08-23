@@ -1,19 +1,18 @@
-def roll_call_dwarves
-  i = 0
-  while i < array.length
-    puts "#{i + 1}. #{array[i]}"
-    i += 1
+def roll_call_dwarves(dwarfs)# code an argument here
+  # Your code here
+  #dwarfs = ["Doc", "Dopey", "Bashful", "Grumpy"]
+  dwarfs.each_with_index do | name , index |
+    puts "#{index + 1} #{name}"
   end
 end
 
-def summon_captain_planet(array)
-  nu_array = []
-  i = 0 
-  while i < array.length 
-    nu_array << array[i].capitalize + "!"
-    i += 1 
-  end 
-  nu_array
+def summon_captain_planet(veggies)# code an argument here
+  # Your code here
+  # planeteer_calls = ["earth", "wind", "fire", "water", "heart"]
+    veggies.collect do |call| 
+    call.capitalize + "!"
+  end
+
 end
 
 def long_planteer_calls(long_planteer_calls)# code an argument here
@@ -27,12 +26,10 @@ def long_planteer_calls(long_planteer_calls)# code an argument here
     answer
 end
 
-
-def find_the_cheese(array)
+def find_the_cheese(cheese)# code an argument here
+  # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-    array.find do |type|
-    cheese_types.include?(type)
-  end 
+  cheese.find do |cheese|
+    cheese_types.include?(cheese)
+  end
 end
-
-find_the_cheese(snacks)
