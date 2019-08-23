@@ -1,33 +1,10 @@
-def roll_call_dwarves# code an argument here
-  # Your code here
-end
-
-def summon_captain_planet# code an argument here
-  # Your code here
-end
-
-def long_planeteer_calls# code an argument here
-  # Your code here
-end
-
-def find_the_cheese# code an argument here
-  # the array below is here to help
-  cheese_types = ["cheddar", "gouda", "camembert"]
-end
-
-
-
-def roll_call_dwarves(array)
-  i = 0 
-  while i < array.length 
+def roll_call_dwarves
+  i = 0
+  while i < array.length
     puts "#{i + 1}. #{array[i]}"
-    i += 1 
-  end 
+    i += 1
+  end
 end
-
-roll_call_dwarves(dwarves)
-
-
 
 def summon_captain_planet(array)
   nu_array = []
@@ -55,11 +32,6 @@ end
 long_planeteer_calls(call_screams)
 
 
-cheese_types = ["cheddar", "gouda", "camembert"]
-snacks = ["crackers", "gouda", "thyme"]
-
-
-# This is the learn.co method that wants the cheese array inside the actual method
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
     array.find do |type|
@@ -68,18 +40,3 @@ def find_the_cheese(array)
 end
 
 find_the_cheese(snacks)
-
-
-
-# This is a much better way cause the cheese array isn't included in the method.
-cheese_types = ["cheddar", "gouda", "camembert"]
-snacks = ["crackers", "gouda", "thyme"]
-
-def find_the_cheese2(array, array2)
-  cheese_types = array2
-    array.find do |type|
-    cheese_types.include?(type)
-  end 
-end
-
-find_the_cheese2(snacks, cheese_types)
